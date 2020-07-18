@@ -1,0 +1,32 @@
+<hr />
+<h3>{{ category }}</h3>
+<hr />
+<div class="row mb-3">
+  <div class="col-md-12">
+    <button class="btn btn-sm btn-success ml-2">Sort</button>
+    <button class="btn btn-sm btn-primary ml-2">Filter</button>
+  </div>
+</div>
+<div class="row ml-2 mr-2">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-sm-6 col-lg-3" *ngFor="let product of products">
+        <div
+          class="card"
+          style="cursor: pointer;"
+          [routerLink]="['/product', product.name]"
+        >
+          <div class="img-holder">
+            <img src="{{ product.image }}" alt="{{ product.name }}" />
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h6 class="mb-0">{{ product.name }}</h6>
+              <p>{{ product.price }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

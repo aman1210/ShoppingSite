@@ -1,0 +1,60 @@
+.background{
+  background-color: rgb(12, 3, 66);
+  color: #ffffff;
+  z-index: -1;
+  height: 200px;
+  overflow: visible;
+}
+.man{
+  background-image: url('../../assets/man.png');
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  height: 200px;
+  /* background-position: 105% 0; */
+}
+.box{
+  margin-top: 10px;
+  margin-left: 50px;
+  max-height: 40px;
+  max-width: 200px;
+  padding: 0px 5px;
+  color: black;
+  text-align: center;
+  background-color: rgb(200, 212, 217);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.box2{
+  margin-top: 10px;
+  margin-left: 50px;
+  max-height: 40px;
+  max-width: 200px;
+  padding: 0px 5px;
+  color: black;
+  text-align: center;
+  background-color: rgb(200, 212, 217);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.typewriter p {
+  overflow: hidden;
+  white-space: nowrap; 
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}

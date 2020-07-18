@@ -1,0 +1,39 @@
+<app-banner></app-banner>
+
+<!-- Categories Section -->
+
+<section>
+  <ul class="list-inline ml-5">
+    <li class="list-inline-item h3"><strong>Popular Categories</strong></li>
+    <li class="list-inline-item divider"></li>
+    <li class="list-inline-item h5"><a routerLink="/categories">See more &#8594;</a></li>
+  </ul>
+  <div class="self-container">
+  <!--for displaying items side by side-->
+    <div class="holder">
+      <span class="list" *ngFor="let category of (categories|async).categories">
+        <div class="imgHolder" [ngStyle]="{ backgroundColor: category.categoryColor }" >
+          <a [routerLink]="['/category',category.id]"><img id="c-img" src="{{ category.image }}" /></a>
+        </div>
+        <h6 style="font-size: 1.5vw;">{{ category.title }}</h6>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- Offers Section -->
+
+<section>
+  <ul class="list-inline ml-5">
+    <li class="list-inline-item h3">Exciting Offers!</li>
+  </ul>
+        <div class="self-container">
+    <div class="offers">
+      <span *ngFor="let offer of offers">
+        <div class="offerHolder">
+          <a routerLink="/hello"><img id="offer-image" src="{{offer}}" alt="Offer"></a>
+        </div>
+      </span>
+    </div>
+  </div>
+</section>

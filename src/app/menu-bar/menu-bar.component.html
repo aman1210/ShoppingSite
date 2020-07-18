@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container" id="nav">
+    <a class="navbar-brand" href="#">
+      <img
+        src="../../assets/logoHead.png"
+        width="30"
+        height="30"
+        class="d-inline-block align-top"
+        alt=""
+        loading="lazy"
+      />
+      SoulStore
+    </a>
+    <div class="input-group mr-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search for..."
+        aria-label="Recipient's username"
+        aria-describedby="button-addon2"
+      />
+      <div class="input-group-append">
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+          id="button-addon2"
+        >
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" class="open-btn" (click)="openNav()"
+          ><span class="navbar-toggler-icon"></span
+        ></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#"><i class="fas fa-home link"></i><span id="spacer"></span>Home</a>
+  <a href="#"
+    ><i class="fas fa-star link"></i><span id="spacer"></span>Favorite</a
+  >
+  <a href="#"
+    ><i class="fas fa-shopping-cart link"></i><span id="spacer"></span>Cart</a
+  >
+</div>

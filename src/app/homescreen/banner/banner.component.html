@@ -1,0 +1,20 @@
+<div class="jumbotron mb-0 mt-1" [ngStyle]="{ padding: count == 0 ? '4rem 2rem' : '0rem 2rem'}">
+  <div class="container" *ngIf="count == 0">
+    <h1 class="display-4">Welcome!</h1>
+    <hr class="my-4" />
+    <p class="lead">
+      Buy your favorite products at cheapest price on
+      <strong>SoulStore</strong> only
+    </p>
+  </div>
+</div>
+<div id="images">
+  <ng-container *ngFor="let image of images; let i = index">
+    <img *ngIf="i===count-1" src="{{image}}" [@banners] alt="Sale" />
+  </ng-container>
+</div>
+<div class="dots">
+  <button class="btn btn-outline-dark" (click)="onBack()"><</button>
+  <span class="dot" *ngFor="let item of images;let i = index" [ngStyle]="{'background-color': i==count-1?'black':'#bbb'}"></span>
+  <button class="btn btn-outline-dark" (click)="onForward()">></button>
+</div>

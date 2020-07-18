@@ -1,0 +1,69 @@
+.holder{
+  display: flex;
+}
+
+.list{
+  /* float: left; */
+  text-align: center;
+  margin: 0rem 1rem;
+}
+
+.imgHolder{
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: auto 5px;
+}
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.self-container{
+  overflow: auto;
+  white-space: nowrap;
+  margin: 2rem 2rem;
+}
+
+.divider{
+  margin: 0rem 1.5rem;
+  border-left: 1px solid rgba(182, 180, 180,0.4);
+  height: 20px;
+}
+
+.offers{
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.offerHolder{
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#offer-image{
+  height: 100%;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+@media (max-width: 758px){
+  .imgHolder{
+    width: 75px;
+    height: 75px;
+  }
+  .offerHolder{
+    width: 200px;
+    height: 100px;
+  } 
+}

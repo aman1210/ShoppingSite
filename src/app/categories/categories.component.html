@@ -1,0 +1,25 @@
+<hr />
+<h3>Categories</h3>
+<hr />
+<div class="row ml-2 mr-2">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-6 col-lg-3" *ngFor="let category of categories">
+        <div
+          class="card"
+          [routerLink]="['/category', category.id]"
+          style="cursor: pointer;"
+        >
+          <div class="img-holder">
+            <img src="{{ category.image }}" alt="{{ category.title }}" />
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h5>{{ category.title }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

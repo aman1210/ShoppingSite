@@ -1,0 +1,9 @@
+.img-holder {
+  height: 400px;
+  width: 500px;
+  text-align: center;
+}
+img {
+  /* max-width: 200px; */
+  max-height: 400px;
+}
